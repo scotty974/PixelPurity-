@@ -10,7 +10,8 @@ export default {
         Nunito  : 'Nunito Sans'
       },
       colors: {
-        back : '#0f1016'
+        back : '#0f1016',
+        primary : '#0d1934'
       }
     },
   },
