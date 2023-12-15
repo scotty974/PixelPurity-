@@ -13,7 +13,7 @@ export default function Header(){
 
     return (
         <header className="p-4 flex justify-between items-start  ">
-            <h1 className="text-white font-Nunito text-lg font-bold">PixelPurity</h1>
+            <h1 className="text-white font-Nunito text-lg font-bold md:text-2xl">PixelPurity</h1>
             <div className='flex flex-col  items-end'>
                 {open ?  <X color='white' className='hover:cursor-pointer ' onClick={handleOpenMenu}/> :<Menu color='white' className='hover:cursor-pointer ' onClick={handleOpenMenu}/>}
                   <ul className={`mt-2 absolute top-10 transition ease-in-out delay-300 bg-white bg-opacity-5 p-4 rounded-lg backdrop-blur-md ${open ? 'visible' : 'hidden'}`} >

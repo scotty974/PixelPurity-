@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         back : '#0f1016',
-        primary : '#0d1934'
+        primary : '#7e4d7a'
       }
     },
   },
