@@ -1,15 +1,14 @@
 import "./App.css";
-import Header from "./components/Header/Header";
 import SectionGrid from "./components/SectionGrid/SectionGrid";
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <main className="bg-back h-screen">
-       <section className="container m-auto ">
-       <div className="w-full"><Header /></div>
+    
+       <section className="container m-auto h-screen ">
+        <Header />
        <SectionGrid />
         </section> 
-     
-    </main>
+
   );
 }
 
