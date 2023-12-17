@@ -1,7 +1,8 @@
 import Filters from "../../components/Filters/Filters";
+import MailCard from "../../components/MailCard/MailCard";
 export default function SectionMail() {
   return (
-    <section className="h-full flex flex-col md:gap-8">
+    <section className="h-full flex flex-col md:gap-8 md:w-[530px]">
       <input
         type="text"
         name="text"
@@ -13,8 +14,13 @@ export default function SectionMail() {
       <div className="flex justify-between invisible md:visible">
         <Filters />
       </div>
-      <section>
-        
+      <section className="flex flex-col gap-4">
+      <MailCard />
+      <MailCard />
+      <MailCard />
+      <MailCard />
+    
+     
       </section>
     </section>
   );
