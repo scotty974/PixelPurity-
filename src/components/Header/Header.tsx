@@ -1,13 +1,18 @@
+import { Home,Inbox,File,PlusCircle  } from 'lucide-react';
+import CategoriesList from '../CategoriesList/CategoriesList';
 export default function Header() {
     return (
-    <header className="mt-4 p-4 md:p-0 flex flex-col md:flex-row justify-between items-center">
-        <h1 className="text-white text-2xl">Logo</h1>
-        <ul className="flex text-white font-Nunito md:justify-between justify-around  w-96 mt-4 md:mt-0">
-            <li className="hover:cursor-pointer hover:underline">Agents </li>
-            <li className="hover:cursor-pointer hover:underline" >Weapons</li>
-            <li className="hover:cursor-pointer hover:underline">Ranked Tiers</li>
-        </ul>
-    </header>
+    <aside className=" p-4 md-p-0 h-full">
+       <h1 className='text-4xl font-Nunito text-neutral-700 font-bold'>Mail box</h1>
+       <ul className='mt-10 flex  md:flex-col  md:h-72 gap-6'>
+        <li className='md:w-36'><a href="" className='flex text-neutral-700 font-Nunito items-center text-sm font-medium'>  <Home size={24} className='md:mr-4 mr-2' /> Home</a></li>
+        <li className='md:w-36'><a href="" className='flex text-neutral-700 font-Nunito items-center text-sm font-medium'>  <Inbox size={24} className='md:mr-4 mr-2'/> Inbox</a></li>
+        <li className='md:w-36'><a href="" className='flex text-neutral-700 font-Nunito items-center text-sm font-medium'>  <File size={24} className='md:mr-4 mr-2'/> Saved</a></li>
+        <li className='md:w-36'><a href="" className='flex text-neutral-700 font-Nunito items-center text-sm font-medium'>  <PlusCircle  size={24} className='md:mr-4 mr-2'/> New</a></li>
+       </ul>
+       <CategoriesList />
+      
+    </aside>
     );
   }
   

@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         back : '#0f1016',
-        primary : '#7e4d7a'
+        primary : '#ff4656'
       },
       height : {
         cadre : 800
